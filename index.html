@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuestra Historia 💜</title>
+
+    <!-- Fuentes (usaremos Playfair + Great Vibes + una sans para texto legible) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS principal (lo vamos a crear después) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas para el fondo floral animado (se controla desde script.js) -->
+    <canvas id="flowerCanvas" aria-hidden="true"></canvas>
+
+    <!-- HEADER / HERO -->
+    <header class="hero" role="banner">
+        <h1 class="hero-title">Nuestra historia comenzó hace...</h1>
+
+        <div class="contador-box" aria-live="polite" aria-atomic="true">
+            <div id="contador">Cargando contador...</div>
+        </div>
+
+        <div class="hero-actions">
+            <button id="musicBtn" class="btn btn-music" type="button">Te dedico esta canción mi princesa</button>
+           
+        </div>
+    </header>
+
+    <!-- SECCIÓN HISTORIA / GALERÍA (aquí van las 9 imágenes + textos completos) -->
+    <main>
+        <section class="story">
+            <h2 class="story-title">Y desde entonces...</h2>
+
+            <!-- MOMENTO 1 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image1.jpg" alt="Nuestro primer San Valentín">
+                </figure>
+                <div class="momento-texto">
+                    <h3>Nuestro primer San Valentín</h3>
+                    <p>
+Ese fue el primer San Valentín en el que estuve acompañado. Para mí era una fecha nueva, no sabía muy bien qué se hacía o qué se esperaba… pero sí tenía algo claro: no quería estar en ningún otro lugar que no fuera contigo.
+                    </p>
+                    <p>
+Estaba nervioso, no te voy a mentir. Tenía miedo de arruinar algo, de no estar a la altura del momento. Pero todo eso desapareció con el primer beso que nos dimos ese día. Fue como si todo lo malo se apagara de repente. Ese beso me calmó, me aseguró, me hizo sentir que todo estaba bien.
+                    </p>
+                    <p>
+Nunca lo voy a olvidar.
+Y hoy, en nuestro tercer San Valentín, sigo sintiendo esos nervios… pero también sigo sabiendo que con un solo beso tuyo, todo vuelve a su lugar.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 2 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image2.jpg" alt="Lo que causas en mí">
+                </figure>
+                <div class="momento-texto">
+                    <h3>Lo que causas en mí</h3>
+                    <p>
+Sé que te lo he dicho muchas veces, amor, y probablemente lo seguiré repitiendo. No me importa sonar insistente. Hay cosas que merecen decirse una y otra vez.
+                    </p>
+                    <p>
+Cuando tomo tu mano, esa manito pequeña que encaja tan perfecto con la mía… siento una paz difícil de explicar. Amo entrelazar mis dedos con los tuyos, sentir que estás ahí.
+                    </p>
+                    <p>
+Cada momento contigo se siente como un sueño del que no quiero despertar. Me llenas de alegría, de calma, de tranquilidad… pero sobre todo me llenas de amor. Un amor limpio, sincero, que nace sin esfuerzo.
+                    </p>
+                    <p>
+Eso eres para mí: amor puro.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 3 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image3.jpg" alt="Cuando somos nosotros">
+                </figure>
+                <div class="momento-texto">
+                    <h3>Cuando somos nosotros</h3>
+                    <p>
+Recuerdo cuando estábamos empezando a salir y yo sentía que íbamos rápido. Era mi primera relación y quería que todo tuviera un orden, que todo fuera paso a paso. Te lo dije con un poco de miedo.
+                    </p>
+                    <p>
+Y tú me respondiste algo que se quedó conmigo para siempre:
+"Cuando se trata de conexión, no importa el ritmo."
+                    </p>
+                    <p>
+Ahí entendí que lo nuestro no era cuestión de tiempos, sino de sentir. Y cuando estamos juntos, cuando reímos, cuando nos molestamos, cuando simplemente somos… ahí es donde más amo estar. Porque no fingimos nada. Somos naturales, somos nosotros.
+                    </p>
+                    <p>
+Y eso, contigo, es lo más bonito que tengo.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 4 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image4.jpg" alt="No es qué, es quién">
+                </figure>
+                <div class="momento-texto">
+                    <h3>No es qué, es quién</h3>
+                    <p>
+Te confieso algo… al principio me daba miedo invitarte a salir. Me sentía pequeño frente a ti. Eres —y sigues siendo— una mujer increíblemente linda, y yo pensaba que alguien como tú estaba fuera de mi alcance.
+                    </p>
+                    <p>
+Hablé con Santi, le conté lo que sentía, que una simple conversación por mensajes había sido suficiente para que llamaras mi atención. Y me dijo algo que en ese momento no entendí:
+"No se trata de qué hagas ni de qué le des, sino de quién eres cuando estás con ella."
+                    </p>
+                    <p>
+No sé si en ese momento le creí del todo… pero tomé la decisión de salir contigo. Y hoy puedo decir que fue una de las mejores decisiones de mi vida.
+                    </p>
+                    <p>
+Porque contigo entendí que no importa el lugar ni el plan. Si tú estás, todo se vuelve especial.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 5 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image5.jpg" alt="Primer aniversario">
+                </figure>
+                <div class="momento-texto">
+                    <h3>Primer aniversario</h3>
+                    <p>
+Ese día lo tengo grabado en el corazón.
+                    </p>
+                    <p>
+En la noche me quedé pensando, como siempre hago cuando algo me importa mucho. Pero esa vez fue diferente. Me hice una pregunta clara:
+¿Quiero pasar mi vida con ella?
+Y mi respuesta fue igual de clara: sí.
+                    </p>
+                    <p>
+Me imaginé una vida contigo. Verte llegar del trabajo, cambiarte mientras me cuentas cómo estuvo tu día. Reírnos antes de dormir. Despertar y saber que sigues ahí. Algo tan simple… pero tan perfecto.
+                    </p>
+                    <p>
+También sentí un poco de tristeza, porque sabía que esa noche sería solo un momento, no nuestra realidad todavía. Pero lejos de desanimarme, eso me dio más ganas de construir, de trabajar, de crecer. Porque quiero que esas noches dejen de ser imaginación y se conviertan en nuestra rutina.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 6 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image6.jpg" alt="Tu sonrisa">
+                </figure>
+                <div class="momento-texto">
+                    <h3>Tu sonrisa</h3>
+                    <p>
+Tu sonrisa… no sé cómo explicarlo sin quedarme corto.
+                    </p>
+                    <p>
+Puedo estar cansado, frustrado, desconectado del mundo… pero cuando sonríes, algo en mí se acomoda. Es como si me recordaras sin palabras que todo está bien, que no estoy solo.
+                    </p>
+                    <p>
+Esos ojitos tuyos dicen más que mil frases.
+Y cuando me miras así, siento que no hay nada que no pueda enfrentar.
+                    </p>
+                    <p>
+Prométeme algo: no dejes de sonreír nunca. Incluso cuando yo no esté cerca. Tu sonrisa tiene el poder de cambiar días… el mío, siempre.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 7 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image7.jpg" alt="No siempre se está bien">
+                </figure>
+                <div class="momento-texto">
+                    <h3>No siempre se está bien</h3>
+                    <p>
+No siempre soy la mejor versión de mí. Lo sé. Hay momentos en los que fallo, en los que me cuesta, en los que no reacciono como debería.
+                    </p>
+                    <p>
+Pero tú nunca me has soltado la mano. Incluso cuando yo mismo dudo de mí, tú sigues creyendo. Sigues apoyándome, recordándome que los malos momentos pasan.
+                    </p>
+                    <p>
+Gracias por quedarte. Gracias por entenderme incluso cuando ni yo me entiendo. Eso vale más de lo que imaginas.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 8 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image8.jpg" alt="Momentos">
+                </figure>
+                <div class="momento-texto">
+                    <h3>Momentos</h3>
+                    <p>
+Casi dos años contigo… y siento que hemos vivido tanto.
+                    </p>
+                    <p>
+Momentos felices, difíciles, intensos, tranquilos. Cada uno nos ha enseñado algo. Nos ha hecho crecer como pareja y como personas.
+                    </p>
+                    <p>
+Y si algo tengo claro es que quiero seguir acumulando recuerdos contigo. Más risas, más conversaciones largas, más abrazos inesperados.
+                    </p>
+                    <p>
+Quiero una vida contigo… si tú también la quieres conmigo.
+                    </p>
+                </div>
+            </article>
+
+            <!-- MOMENTO 9 -->
+            <article class="momento">
+                <figure class="momento-img">
+                    <img src="images/image9.jpg" alt="Mi mujer">
+                </figure>
+                <div class="momento-texto">
+                    <h3>Mi mujer</h3>
+                    <p>
+He hablado de muchas cosas aquí, pero todas tienen el mismo centro: tú.
+                    </p>
+                    <p>
+No eres cualquier mujer. Eres mi mujer. Mi novia. La persona que cambió mi forma de ver el amor.
+                    </p>
+                    <p>
+Eres quien me cuida, quien me protege, quien me impulsa a ser mejor. Eres la persona que me inspira a hacer cosas como esta, solo para verte sonreír.
+                    </p>
+                    <p>
+Tal vez no pueda darte todo lo que mereces todavía, pero sí puedo prometerte algo: siempre voy a buscar la manera de demostrarte lo mucho que te amo.
+                    </p>
+                    <p>
+Eres inteligente, humilde, dulce, fuerte… eres todo lo que un día le pedí a la vida sin saber que existías.
+                    </p>
+                    <p>
+Y poder llamarte “el amor de mi vida” no es una frase bonita.
+Es una verdad que siento todos los días.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+<section class="final-section">
+    <button id="secretBtn" class="btn btn-secret final-btn">
+        No presiones este botón
+    </button>
+</section>
+
+</main>
+
+<!-- CARTA (oculta hasta activar) -->
+<aside id="cartaContainer" class="carta-panel hidden" 
+       role="dialog" 
+       aria-modal="true" 
+       aria-labelledby="cartaTitle">
+
+    <div class="carta-inner">
+        <button id="closeCarta" 
+                class="btn btn-close" 
+                type="button" 
+                aria-label="Cerrar carta">
+            ✕
+        </button>
+
+        <h2 id="cartaTitle">Para ti 💜</h2>
+
+        <div id="cartaTexto" class="carta-text">
+
+            <p>
+                Decidí hacer esto para ti porque, si algo tengo claro en esta vida,
+                es que eres la razón por la que hoy escribo cartas y hago cosas lindas
+                para una mujer. Pero todo cobra sentido cuando esa mujer es el amor
+                de mi vida. Daría lo que fuera por ti, porque mereces cosas muy hermosas.
+            </p>
+
+            <p>
+                Esta vez, amor, quiero desearte un feliz San Valentín. Una vez más,
+                decirte lo muchísimo que te amo. Vivo profundamente feliz a tu lado
+                y le agradezco a Dios por permitir que tú y yo nos conociéramos.
+            </p>
+
+            <p>
+                Este es nuestro tercer San Valentín, y aún nos esperan muchísimos más,
+                amor… una vida entera juntos.
+            </p>
+
+            <p>
+                Te amo demasiado, mi princesita hermosa.<br>
+                Te amo hoy y siempre 🤍
+            </p>
+
+            <p><strong>PD:</strong> Gas fármaco</p>
+
+        </div>
+    </div>
+</aside>
+
+<audio id="audio" src="music/milvidas.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
